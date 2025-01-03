@@ -9,7 +9,7 @@
 - **Automated Link Collection:** Iterates through 1,046 pages to gather links to individual company profiles.
 - **Data Extraction:** Retrieves company name, address, city, province, and VAT number from each profile.
 - **Rate Limiting:** Implements a 20-second delay between requests to prevent server overload.
-- **Error Handling:** Gracefully handles HTTP request exceptions.
+- **Error Handling:** Handles HTTP request exceptions.
 - **Data Consolidation:** Compiles all extracted data into a single CSV file.
 
 ## Prerequisites
@@ -79,11 +79,6 @@ In the Jupyter interface, open `company-scraper.ipynb`.
 
 - Data is saved to `companies_batch_0_100.csv` in the project directory upon completion.
 
-## Notebook Workflow
-
-### Import Libraries
-
-Utilizes `requests` for HTTP requests, `pandas` for data manipulation, `BeautifulSoup` for HTML parsing, and `time` for managing delays.
 
 ### Collect Company Links
 
@@ -116,22 +111,6 @@ Modify the `time.sleep(20)` line in the notebook to change the delay duration.
 ### Changing Output Filename
 
 Update the filename in the `to_csv` method to prevent overwriting existing files.
-
-## Troubleshooting
-
-### Connection Errors
-
-- Ensure a stable internet connection.
-- Verify the target URL is correct.
-- If issues persist, the website may be blocking requests. Consider increasing the delay or using proxies.
-
-### Parsing Issues
-
-- If the website's structure changes, update the BeautifulSoup selectors accordingly.
-
-### Incomplete Data
-
-- Some company pages might lack certain information. Implement additional checks to handle missing data gracefully.
 
 
 ## License
