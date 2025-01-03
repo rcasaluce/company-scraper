@@ -115,7 +115,7 @@ Update the filename in the `to_csv` method to prevent overwriting existing files
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the  Apache License 2.0.  See the [LICENSE](LICENSE) file for details.
 
 
 **Disclaimer:** Use this notebook responsibly. Unauthorized scraping can lead to legal consequences or IP blocking.
