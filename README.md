@@ -1,4 +1,3 @@
-```markdown
 # Company Scraper
 
 ## Overview
